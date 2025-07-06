@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Umar Akbar - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+      <div class="toggle-circle"></div>
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <header>
+      <div class="profile-img">
+        <i class="fas fa-user"></i>
+      </div>
+      <h1>Muhammad Umar Akbar</h1>
+      <p>Email: umar.akbar4932@gmail.com</p>
+      <p>Computer Engineering Student | AI/ML Enthusiast | Embedded Systems Enthusiast | Mobile Application Developer</p>
+      
+      <nav>
+        <ul>
+          <li><a href="#about" class="active"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+          <li><a href="#awards"><i class="fas fa-award"></i> Awards and Honors</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>
+      I am currently pursuing a Bachelor of Science in Computer Engineering from Information Technology University,
+      where I am deeply passionate about advancing technology through Embedded Systems, Machine Learning, and Software Development.
+      My academic journey has equipped me with a strong foundation in integrating hardware and software,
+      alongside proficiency in programming languages such as C++, Python, C for STM32, Dart, and intermediate JavaScript.
+      I have also explored Mobile Application Development using the Flutter Framework, building intuitive and innovative applications. 
+      Driven by a passion for solving complex challenges, I am committed to transforming creative ideas into practical, high-impact solutions.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      
+      <div class="education-entry">
+        <div class="edu-title">
+          <span>Bachelor of Science in Computer Engineering</span>
+          <span class="edu-dates">Aug 2023 – June 2027</span>
+        </div>
+        <div class="edu-school">
+          <i class="fas fa-map-marker-alt"></i> Information Technology University, Lahore, Pakistan
+        </div>
+        <p>CGPA: 3.31/4.0</p>
+        <p>Relevant coursework: Object Oriented Programming, Data Structures and Algorithms, Database Systems, Machine Learning, Embedded Systems, Computer Architecture(Risc V)</p>
+      </div>
+      
+      <div class="education-entry">
+        <div class="edu-title">
+          <span>Summer School in Artificial Intelligence: A Practical Introduction</span>
+          <span class="edu-dates">July 2025</span>
+        </div>
+        <div class="edu-school">
+          <i class="fas fa-map-marker-alt"></i> The University of Warwick, Coventry, United Kingdom
+        </div>
+        <p>Grade: Summer School Under Progress</p>
+        <p>Focused on practical applications of AI, algorithms in python: q learning, regret matching, genetic algorithms, writing software bots</p>
+        <a href="https://warwick.ac.uk/study/summer-with-warwick/warwick-summer-school/courses/artificial-intelligence/" target="_blank" rel="noopener noreferrer">More Info related to the course</a>
+      </div>
+      
+      <div class="education-entry">
+        <div class="edu-title">
+          <span>American High School</span>
+          <span class="edu-dates">Aug 2019 – June 2023</span>
+        </div>
+        <div class="edu-school">
+          <i class="fas fa-map-marker-alt"></i> Scarsdale International School, Lahore, Pakistan
+        </div>
+        <p>CGPA: 3.88/4.0</p>
+        <p>Graduated with a Gold Medal in Mathematics, core courses include Mathematics, Physics, Chemistry, Computer Science</p>
+        <p>Studied following Advanced Placement Courses by College Board: 
+          <a href="https://apstudents.collegeboard.org/courses/ap-computer-science-principles" target="_blank" rel="noopener noreferrer">AP Computer Science Principles</a>, 
+          <a href="https://apstudents.collegeboard.org/courses/ap-calculus-ab" target="_blank" rel="noopener noreferrer">AP Calculus AB</a>
+        </p>
+      </div>
+    </section>
+    
+     <section id="experience">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="card-grid">
+       <div class="card">
+  <h3><i class="fas fa-laptop-code"></i> Software Engineering Intern</h3>
+  <div class="date">Aug 2024</div>
+  <p><strong>ADDO AI, Lahore</strong></p>
+  <p>
+    Contributed to software development projects by leveraging Python and its core libraries to handle data processing tasks. Assisted in managing and manipulating various data formats, including CSV and JSON, to support data-driven solutions. Collaborated with the team to implement efficient data workflows, adhering to software engineering best practices such as clean code principles and version control.
+  </p>
+</div>       
+        <div class="card">
+  <h3><i class="fas fa-robot"></i> Mobile Application Development Intern</h3>
+  <div class="date">Jun 2024 - Jul 2024</div>
+  <p><strong>The Xpertz, Lahore</strong></p>
+  <p>
+    Contributed to the development of cross-platform mobile applications using Flutter. Integrated RESTful APIs for dynamic data handling and implemented Firebase services for real-time database, and authentication functions. Gained hands-on experience in building scalable and responsive user interfaces, debugging code, and collaborating in an agile development environment.
+  </p>
+</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-code"></i> Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3><i class="fas fa-microchip"></i> Bluetooth Remote Controlled Car</h3>
+          <div class="date">Embedded Systems | C | STM32</div>
+          <p>
+            Designed and built a Bluetooth controlled car using STM32(Blackpill), Motor Driver(L298), and HC05(Bluetooth Module). 
+            Enabled wireless control via a custom mobile app interface using Bluetooth communication. 
+            Implemented forward, backward, left, and right movement with smooth real-time response. 
+            Focused on circuit design, microcontroller programming, and integration of hardware components for reliable performance.
+          </p>
+          <p><a href="https://github.com/codewithakbar11/Bluetooth-RC-Car" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-mobile-alt"></i> Chatting Application</h3>
+          <div class="date">Flutter | Dart | Firebase</div>
+          <p>
+            Developed a feature-rich cross-platform chatting application using Flutter and Firebase. 
+            The app supports real-time messaging, group chats, media sharing (images, videos), and user authentication. 
+            Implemented functionalities like message seen/delivered status, and user presence indicators. 
+            Designed with a clean and responsive UI, offering both light and dark themes for a seamless user experience.
+          </p>
+          <p><a href="https://github.com/codewithakbar11/chatting-app" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><i class="fas fa-tools"></i> Skills</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Programming Languages</h3>
+          <p>C++, Python, C Language for STM32, Dart, JavaScript(basic)</p>
+        </div>
+        <div class="card">
+          <h3>Frameworks & Tools</h3>
+          <p>Flutter, Firebase, STM32, Git, HTML, CSS</p>
+        </div>
+        <div class="card">
+          <h3>Technical Skills</h3>
+          <p>Machine Learning, Embedded Systems, Software Development</p>
+        </div>
+        <div class="card">
+          <h3>Soft Skills</h3>
+          <p>Problem Solving, Team Collaboration, Time Management, Communication</p>
+        </div>
+      </div>
+    </section>
+
+     <section id="awards">
+      <h2><i class="fas fa-award"></i> Awards and Honors</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3><i class="fas fa-medal"></i> Gold Medal in Mathematics</h3>
+          <div class="date">June 2023</div>
+          <p><strong>Scarsdale International School, Lahore, Pakistan</strong></p>
+          <p>
+            Awarded the Gold Medal in Mathematics for outstanding academic performance in high school, achieving the highest grade in core mathematics courses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group full-width"
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject of your message">
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message here..."></textarea>
+        </div>
+        
+        <div class="form-group full-width">
+          <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://www  .linkedin.com/in/muhammad-umar-akbar-73a09229a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/codewithakbar11" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/codewithakbar?igsh=MWoxamdpbmR4b3psdA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2025 Muhammad Umar Akbar. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+      body.classList.add('dark-theme');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+    });
+
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelectorAll('nav a').forEach(link => {
+          link.classList.remove('active');
+        });
+
+        this.classList.add('active');
+
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= sectionTop - 150) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
