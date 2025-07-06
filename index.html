@@ -178,6 +178,16 @@
           </p>
         </div>
       </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3><i class="fas fa-medal"></i>AP Scholar</h3>
+          <div class="date">June 2023</div>
+          <p><strong>Scarsdale International School, Lahore, Pakistan</strong></p>
+          <p>
+            Awarded the Gold Medal in Mathematics for outstanding academic performance in high school, achieving the highest grade in core mathematics courses.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
@@ -188,7 +198,7 @@
           <input type="text" id="name" placeholder="Enter your name">
         </div>
         
-        <div class="form-group full-width"
+        <div class="form-group full-width">
           <label for="email">Email</label>
           <input type="email" id="email" placeholder="Enter your email">
         </div>
@@ -234,7 +244,6 @@
       body.classList.toggle('dark-theme');
       localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
     });
-
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -256,28 +265,23 @@
         }
       });
     });
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1 
+    };
 
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('nav a');
-
-      let current = '';
-
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (window.scrollY >= sectionTop - 150) {
-          current = section.getAttribute('id');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
         }
       });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
-        }
-      });
+    }, observerOptions);
+    const animatedElements = document.querySelectorAll('section, .card, .education-entry, .form-group, .social-links a');
+    animatedElements.forEach(element => {
+      observer.observe(element);
     });
   </script>
 </body>
