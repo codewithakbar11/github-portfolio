@@ -22,6 +22,7 @@
   --dark-card-bg: rgba(30, 41, 59, 0.9);
   --dark-card-border: rgba(71, 85, 105, 0.3);
   --dark-shadow: rgba(0, 0, 0, 0.3);
+
   
   /* Current Theme */
   --bg-gradient-start: var(--light-bg-gradient-start);
@@ -64,6 +65,7 @@ body {
   padding: 2rem;
   line-height: 1.6;
 }
+
 
 .container {
   max-width: 1200px;
@@ -108,6 +110,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Spreads icons to left and right */
   padding: 0 5px;
   z-index: 10;
   box-shadow: 0 2px 5px var(--shadow);
@@ -117,6 +120,15 @@ body {
   font-size: 18px;
   color: var(--accent);
   transition: transform 0.3s ease;
+  z-index: 1; /* Ensures icons are above the toggle circle */
+}
+
+.theme-toggle .fa-sun {
+  order: 1; /* Sun on the left */
+}
+
+.theme-toggle .fa-moon {
+  order: 3; /* Moon on the right */
 }
 
 .toggle-circle {
@@ -126,6 +138,12 @@ body {
   background: var(--accent);
   border-radius: 50%;
   transition: transform 0.3s ease;
+  order: 2; 
+  left: 5px; 
+}
+
+.theme-toggle.active .toggle-circle {
+  transform: translateX(28px);
 }
 
 .dark-theme .toggle-circle {
@@ -513,7 +531,6 @@ footer {
   box-shadow: 0 5px 15px rgba(129, 140, 248, 0.4);
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -613,3 +630,17 @@ a:hover {
 .dark-theme nav ul li a {
   color: #ffffff;
 }
+
+.prominent-link {
+          color: #1a73e8;
+          text-decoration: none;
+          font-weight: 500;
+          transition: text-decoration 0.2s ease;
+        }
+        .prominent-link:hover {
+          text-decoration: underline;
+        }
+        .prominent-link i {
+          margin-right: 5px;
+          font-size: 0.9em;
+        }
