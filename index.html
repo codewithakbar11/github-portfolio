@@ -6,6 +6,20 @@
   <title>Muhammad Umar Akbar - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .slideshow-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 2rem;
+      padding-bottom: 1rem;
+    }
+    .slideshow-container .card {
+      flex: 0 0 auto;
+      width: 320px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -22,13 +36,11 @@
       <h1>Muhammad Umar Akbar</h1>
       <p>Email: umar.akbar4932@gmail.com</p>
       <p>Computer Engineering Student | AI/ML Enthusiast | Embedded Systems Enthusiast | Mobile Application Developer</p>
-
       <div class="resume-download">
         <a href="resume.pdf" download="Muhammad_Umar_Akbar_Resume" class="download-btn">
           <i class="fas fa-download"></i> Download Resume
         </a>
       </div>
-      
       <nav>
         <ul>
           <li><a href="#about" class="active"><i class="fas fa-user"></i> About</a></li>
@@ -57,7 +69,6 @@
 
     <section id="education">
       <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-      
       <div class="education-entry">
         <div class="edu-title">
           <span>Bachelor of Science in Computer Engineering</span>
@@ -69,7 +80,6 @@
         <p>CGPA: 3.31/4.0</p>
         <p>Relevant coursework: Object Oriented Programming, Data Structures and Algorithms, Database Systems, Machine Learning, Embedded Systems, Computer Architecture(Risc V)</p>
       </div>
-      
       <div class="education-entry">
         <div class="edu-title">
           <span>Summer School in Artificial Intelligence: A Practical Introduction</span>
@@ -82,7 +92,6 @@
         <p>Focused on practical applications of AI, algorithms in python: q learning, regret matching, genetic algorithms, writing software bots</p>
         <p><a class="prominent-link" href="https://warwick.ac.uk/study/summer-with-warwick/warwick-summer-school/courses/artificial-intelligence/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> More Info related to the course</a></p>
       </div>
-      
       <div class="education-entry">
         <div class="edu-title">
           <span>American High School</span>
@@ -112,10 +121,10 @@
             Contributed to software development projects by leveraging Python and its core libraries to handle data processing tasks. Assisted in managing and manipulating various data formats, including CSV and JSON, to support data-driven solutions. Collaborated with the team to implement efficient data workflows, adhering to software engineering best practices such as clean code principles and version control.
           </p>
           <div class="resume-download">
-        <a href="Addo AI Internship Completion.pdf" download="ADDO AI Internship Completion" class="download-btn">
-          <i class="fas fa-download"></i> View Completion Letter
-        </a>
-      </div>
+            <a href="Addo AI Internship Completion.pdf" download="ADDO AI Internship Completion" class="download-btn">
+              <i class="fas fa-download"></i> View Completion Letter
+            </a>
+          </div>
         </div>       
         <div class="card">
           <h3><i class="fas fa-robot"></i> Mobile Application Development Intern</h3>
@@ -200,47 +209,46 @@
             Awarded the Gold Medal in Mathematics for outstanding academic performance in high school, achieving the highest grade in core mathematics courses.
           </p>
           <div class="resume-download">
-        <a href="Gold Medal.pdf" download="AP Scholar Award" class="download-btn">
-          <i class="fas fa-download"></i> View Award
-        </a>
-      </div>
+            <a href="Gold Medal.pdf" download="AP Scholar Award" class="download-btn">
+              <i class="fas fa-download"></i> View Award
+            </a>
+          </div>
         </div>
         <div class="card">
-  <h3><i class="fas fa-medal"></i> AP Scholar</h3>
-  <div class="date">July 2023</div>
-  <p><strong>College Board USA</strong></p>
-  <p>
-     Earned the AP Scholar Award in recognition of exceptional performance across multiple Advanced Placement subjects during High School, 
-     including AP Calculus AB and AP Computer Science Principles.
-     Demonstrated strong academic ability by scoring 3 or higher on multiple AP exams, reflecting a solid foundation in critical thinking and problem-solving skills 
-     that continue to drive my passion for technology and engineering.
-  </p>
-  <div class="resume-download">
-        <a href="AP Scholar Award.pdf" download="AP Scholar Award" class="download-btn">
-          <i class="fas fa-download"></i> View Award
-        </a>
-      </div>
-</div>
+          <h3><i class="fas fa-medal"></i> AP Scholar</h3>
+          <div class="date">July 2023</div>
+          <p><strong>College Board USA</strong></p>
+          <p>
+            Earned the AP Scholar Award in recognition of exceptional performance across multiple Advanced Placement subjects during High School, 
+            including AP Calculus AB and AP Computer Science Principles.
+            Demonstrated strong academic ability by scoring 3 or higher on multiple AP exams, reflecting a solid foundation in critical thinking and problem-solving skills 
+            that continue to drive my passion for technology and engineering.
+          </p>
+          <div class="resume-download">
+            <a href="AP Scholar Award.pdf" download="AP Scholar Award" class="download-btn">
+              <i class="fas fa-download"></i> View Award
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="extracurricularactivities">
       <h2><i class="fas fa-users"></i>Extra Curricular Activities</h2>
-      <div class="card-grid">
+      <div class="slideshow-container">
         <div class="card">
           <h3><i class="fas fa-hands-helping"></i>Volunteer</h3>
           <div class="date">Feb 2022 - Feb 2023</div>
           <p><strong>National Honor Society USA</strong></p>
           <p>Selected as one of only 15 students for the 2022-2023 National Honor Society (NHS) chapter at Scarsdale International School,
              recognized for outstanding academic excellence, leadership, and character.</p>
-             <div class="resume-download">
-        <a href="NHSmembership.pdf" download="National Honor Society Membership" class="download-btn">
-          <i class="fas fa-download"></i> View Certificate
-        </a>
-      </div>
+          <div class="resume-download">
+            <a href="NHSmembership.pdf" download="National Honor Society Membership" class="download-btn">
+              <i class="fas fa-download"></i> View Certificate
+            </a>
+          </div>
         </div>
         <div class="card">
-          <!-- Updated programming competition icon -->
           <h3><i class="fas fa-laptop-code"></i>Programming Competition</h3>
           <div class="date">February 2024</div>
           <p><strong>SOFTEC Fast Nuces Lahore</strong></p>
@@ -248,25 +256,38 @@
             Participated in the Advanced Programming Competition at FAST-NUCES Lahore, which focused heavily on data structures and problem solving.
           </p>
           <div class="resume-download">
-        <a href="Softec 2024 Participation Certificate.pdf" download="2024 Participation Certificate" class="download-btn">
-          <i class="fas fa-download"></i> View Certificate
-        </a>
+            <a href="Softec 2024 Participation Certificate.pdf" download="2024 Participation Certificate" class="download-btn">
+              <i class="fas fa-download"></i> View Certificate
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-laptop-code"></i>Programming Competition</h3>
+          <div class="date">May 2025</div>
+          <p><strong>SOFTEC Fast Nuces Lahore</strong></p>
+          <p>
+            Participated in the Advanced Programming Competition at FAST-NUCES Lahore, which focused heavily on data structures and problem solving.
+          </p>
+          <div class="resume-download">
+            <a href="Softec 2025 Participation Certificate.pdf" download="2025 Participation Certificate" class="download-btn">
+              <i class="fas fa-download"></i> View Certificate
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-laptop-code"></i>Programming Competition</h3>
+          <div class="date">November 2023</div>
+          <p><strong>Code X 2.0 UET Lahore</strong></p>
+          <p>
+            Participated in the Programming Competition at UET Lahore, which focused heavily on intermediate programming and problem solving.
+          </p>
+          <div class="resume-download">
+            <a href="Code X Participation Certificate.pdf" download="2023 Participation Certificate" class="download-btn">
+              <i class="fas fa-download"></i> View Certificate
+            </a>
+          </div>
+        </div>
       </div>
-</div>
-<div class="card">
-  <h3><i class="fas fa-laptop-code"></i>Programming Competition</h3>
-  <div class="date">May 2025</div>
-  <p><strong>SOFTEC Fast Nuces Lahore</strong></p>
-  <p>
-    Participated in the Advanced Programming Competition at FAST-NUCES Lahore, which focused heavily on data structures and problem solving.
-  </p>
-  <div class="resume-download">
-        <a href="Softec 2025 Participation Certificate.pdf" download="2025 Participation Certificate" class="download-btn">
-          <i class="fas fa-download"></i> View Certificate
-        </a>
-      </div>
-</div>
-</div>
     </section>
 
     <section id="contact">
@@ -276,22 +297,18 @@
           <label for="name">Name</label>
           <input type="text" id="name" placeholder="Enter your name">
         </div>
-        
         <div class="form-group full-width">
           <label for="email">Email</label>
           <input type="email" id="email" placeholder="Enter your email">
         </div>
-        
         <div class="form-group full-width">
           <label for="subject">Subject</label>
           <input type="text" id="subject" placeholder="Subject of your message">
         </div>
-        
         <div class="form-group full-width">
           <label for="message">Message</label>
           <textarea id="message" placeholder="Your message here..."></textarea>
         </div>
-        
         <div class="form-group full-width">
           <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
         </div>
@@ -323,19 +340,16 @@
       body.classList.toggle('dark-theme');
       localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
     });
+
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
-
         document.querySelectorAll('nav a').forEach(link => {
           link.classList.remove('active');
         });
-
         this.classList.add('active');
-
         const targetId = this.getAttribute('href');
         const targetSection = document.querySelector(targetId);
-
         if (targetSection) {
           window.scrollTo({
             top: targetSection.offsetTop - 100,
@@ -344,6 +358,7 @@
         }
       });
     });
+
     const observerOptions = {
       root: null,
       rootMargin: '0px',
@@ -358,10 +373,37 @@
         }
       });
     }, observerOptions);
+
     const animatedElements = document.querySelectorAll('section, .card, .education-entry, .form-group, .social-links a');
     animatedElements.forEach(element => {
       observer.observe(element);
     });
+    const slideshow = document.querySelector('#extracurricularactivities .slideshow-container');
+    if (slideshow) {
+      let scrollDirection = 1;
+      const scrollSpeed = 2;
+      const scrollInterval = 50;
+      function startScrolling() {
+        return setInterval(() => {
+          if (scrollDirection === 1 && slideshow.scrollLeft + slideshow.clientWidth >= slideshow.scrollWidth) {
+            scrollDirection = -1;
+          } else if (scrollDirection === -1 && slideshow.scrollLeft <= 0) {
+            scrollDirection = 1;
+          }
+          slideshow.scrollLeft += scrollSpeed * scrollDirection;
+        }, scrollInterval);
+      }
+
+      let scrollTimer = startScrolling();
+
+      slideshow.addEventListener('mouseenter', () => {
+        clearInterval(scrollTimer);
+      });
+
+      slideshow.addEventListener('mouseleave', () => {
+        scrollTimer = startScrolling();
+      });
+    }
   </script>
 </body>
 </html>

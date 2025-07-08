@@ -645,7 +645,6 @@ a:hover {
           font-size: 0.9em;
         }
 
-        /* Resume Download Button Styles */
 .resume-download {
   display: flex;
   justify-content: center;
@@ -694,7 +693,6 @@ a:hover {
   font-size: 0.9rem;
 }
 
-/* Dark theme specific styles */
 .dark-theme .view-btn {
   color: var(--accent-light);
   border-color: var(--accent-light);
@@ -702,4 +700,25 @@ a:hover {
 
 .dark-theme .view-btn:hover {
   background: rgba(129, 140, 248, 0.15);
+}
+.slideshow-container {
+  scrollbar-width: thin; 
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; 
+}
+
+.slideshow-container::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.slideshow-container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.slideshow-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); 
+  border-radius: 4px;
+}
+
+.slideshow-container:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
 }
