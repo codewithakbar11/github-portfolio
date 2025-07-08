@@ -644,3 +644,62 @@ a:hover {
           margin-right: 5px;
           font-size: 0.9em;
         }
+
+        /* Resume Download Button Styles */
+.resume-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.download-btn, .view-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn {
+  background: linear-gradient(to right, #4f46e5, #818cf8);
+  color: white;
+  box-shadow: 0 4px 8px rgba(79, 70, 229, 0.3);
+}
+
+.view-btn {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(79, 70, 229, 0.4);
+}
+
+.view-btn:hover {
+  background: rgba(129, 140, 248, 0.1);
+  transform: translateY(-3px);
+}
+
+.or-divider {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Dark theme specific styles */
+.dark-theme .view-btn {
+  color: var(--accent-light);
+  border-color: var(--accent-light);
+}
+
+.dark-theme .view-btn:hover {
+  background: rgba(129, 140, 248, 0.15);
+}
