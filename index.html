@@ -378,56 +378,6 @@
     animatedElements.forEach(element => {
       observer.observe(element);
     });
-    const slideshow = document.querySelector('#extracurricularactivities .slideshow-container');
-if (slideshow) {
-  let scrollDirection = 1;
-  // Base scroll speed increased from 2 to 4
-  const baseScrollSpeed = 4;
-  // Adjust speed for mobile (screen width <= 768px)
-  const scrollSpeed = window.innerWidth <= 768 ? baseScrollSpeed * 0.75 : baseScrollSpeed;
-  const scrollInterval = 50;
-
-  function startScrolling() {
-    return setInterval(() => {
-      if (scrollDirection === 1 && slideshow.scrollLeft + slideshow.clientWidth >= slideshow.scrollWidth) {
-        scrollDirection = -1;
-      } else if (scrollDirection === -1 && slideshow.scrollLeft <= 0) {
-        scrollDirection = 1;
-      }
-      slideshow.scrollLeft += scrollSpeed * scrollDirection;
-    }, scrollInterval);
-  }
-
-  let scrollTimer = startScrolling();
-
-  // Mouse events for desktop
-  slideshow.addEventListener('mouseenter', () => {
-    clearInterval(scrollTimer);
-  });
-
-  slideshow.addEventListener('mouseleave', () => {
-    scrollTimer = startScrolling();
-  });
-
-  // Touch events for mobile
-  slideshow.addEventListener('touchstart', () => {
-    clearInterval(scrollTimer);
-  });
-
-  slideshow.addEventListener('touchend', () => {
-    scrollTimer = startScrolling();
-  });
-
-  // Ensure smooth scrolling behavior
-  slideshow.style.scrollBehavior = 'smooth';
-
-  // Recalculate scroll speed on window resize
-  window.addEventListener('resize', () => {
-    const newScrollSpeed = window.innerWidth <= 768 ? baseScrollSpeed * 0.75 : baseScrollSpeed;
-    clearInterval(scrollTimer);
-    scrollTimer = startScrolling();
-  });
-}
   </script>
 </body>
 </html>
